@@ -1,0 +1,12 @@
+<ion-view>
+	<ion-content has-bouncing="false" class="layout">
+		<canvas ng-show="AR" id="viewport" width="550" height="310"></canvas>
+		<a ng-hide="AR" class="btn" id="btn1" ng-click="playVideo('video1.mp4')"></a>
+		<a ng-hide="AR" class="btn" id="btn2" ng-click="playVideo('video2.mp4')"></a>
+		<a ng-hide="AR" class="btn" id="btn3" ng-click="playVideo('video3.mp4')"></a>
+		<a ng-hide="AR" class="btn" id="btn4" ng-click="playVideo('video4.mp4')"></a>
+		<video ng-hide="AR" id="app-video"></video>
+		<a ng-click="switchToVid()" id="vid">Videos</a>
+		<a ng-click="switchToCam()" id="cam">Cámara</a>
+	</ion-content>
+</ion-view>

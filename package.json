@@ -1,7 +1,7 @@
 {
   "name": "arveo",
   "version": "1.0.0",
-  "description": "ARVeo: An Ionic project",
+  "description": "ARVeo: VEO AR project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",

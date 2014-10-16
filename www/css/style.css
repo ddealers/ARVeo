@@ -1,1 +1,128 @@
 /* Empty. Add your own CSS if you like */
+@font-face {
+	font-family: 'MyriadPro-Bold';
+	font-style: normal;
+	src: 	url('MyriadPro-Bold.eot');
+	src: 	url('MyriadPro-Bold.ttf') format('truetype'),
+			url('MyriadPro-Bold.woff') format('woff'),
+			url('MyriadPro-Bold.svg#svgMyriadProBold') format('svg');
+}
+*{
+	font-family: 'MyriadPro-Bold';
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: transparent;
+}
+ion-nav-view, ion-view.pane{
+	background: transparent;
+}
+.layout{
+	background: transparent url(../img/layout2.png) no-repeat center center;
+	background-size: cover;
+}
+.layout div.scroll{
+	height: 100%;
+	background: transparent;
+}
+.layout a#cam{
+	background: #acacac;
+	padding: 2vw 7vw;
+	color: #fff;
+	text-shadow: -1px -1px 5px rgba(0,0,0,0.7);
+	box-shadow: -1px -1px 5px rgba(0,0,0,0.7);
+	border-radius: 5px;
+	position: absolute;
+	bottom: 2vw;
+	left: 50%;
+	margin-left: -28%;
+	font-size: 3vw;
+	text-align: center;
+	height: 5vw;
+	width: 25vw;
+}
+.layout a#vid{
+	background: #459594;
+	padding: 2vw 7vw;
+	color: #fff;
+	text-shadow: -1px -1px 5px rgba(0,0,0,0.7);
+	box-shadow: -1px -1px 5px rgba(0,0,0,0.7);
+	border-radius: 5px;
+	position: absolute;
+	bottom: 2vw;
+	right: 50%;
+	margin-right: -28%;
+	font-size: 3vw;
+	text-align: center;
+	height: 5vw;
+	width: 25vw;
+}
+.layout a.btn{
+	position: absolute;
+	width: 5vw;
+	height: 5vw;
+	display: block;
+	background: transparent url(../img/play_up.png) no-repeat center center;
+	background-size: cover;
+}
+.layout a.btn:hover{
+	background: transparent url(../img/play_down.png) no-repeat center center;
+	background-size: cover;
+}
+.layout a#btn1{
+	top: 2vw;
+	left: 2vw;
+}
+.layout a#btn2{
+	top: 2vw;
+	right: 2vw;
+}
+.layout a#btn3{
+	bottom: 2vw;
+	left: 2vw;
+}
+.layout a#btn4{
+	bottom: 2vw;
+	right: 2vw;
+}
+@media(min-width: 768px){
+	.layout a.btn{
+		width: 9vw;
+		height: 9vw;
+	}
+	.layout a#btn1{
+		top: 4vw;
+		left: 4vw;
+	}
+	.layout a#btn2{
+		top: 4vw;
+		right: 4vw;
+	}
+	.layout a#btn3{
+		bottom: 4vw;
+		left: 4vw;
+	}
+	.layout a#btn4{
+		bottom: 4vw;
+		right: 4vw;
+	}
+}
+#app-video{
+	position: absolute;
+	top: 0;
+	left: 0.9vw;
+	bottom: 8.2vh;
+	right: 0;
+	margin: auto;
+	background: #000;
+}
+canvas#viewport{
+	position: absolute;
+	top: 0;
+	left: 0.9vw;
+	bottom: 8.2vh;
+	right: 0;
+	margin: auto;
+}

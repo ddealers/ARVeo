@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.arveo225785" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.camaleon2punto1.veoar" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>ARVeo</name>
   <description>
-        An Ionic Framework and Cordova project.
+        VEO AR project
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="be@digitaldealers.mx" href="http://digitaldealers.mx/">
+      Digital Dealers Team
     </author>
   <content src="index.html"/>
   <access origin="*"/>
