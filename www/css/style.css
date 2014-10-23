@@ -29,91 +29,69 @@ ion-nav-view, ion-view.pane{
 }
 .layout a#cam{
 	background: #acacac;
-	padding: 2vw 7vw;
+	padding: 0.5% 7%;
 	color: #fff;
 	text-shadow: -1px -1px 5px rgba(0,0,0,0.7);
 	box-shadow: -1px -1px 5px rgba(0,0,0,0.7);
 	border-radius: 5px;
 	position: absolute;
-	bottom: 2vw;
+	bottom: 2%;
 	left: 50%;
 	margin-left: -28%;
-	font-size: 3vw;
+	font-size: 16px;
 	text-align: center;
-	height: 5vw;
-	width: 25vw;
+	height: 7%;
+	width: 25%;
 }
 .layout a#vid{
 	background: #459594;
-	padding: 2vw 7vw;
+	padding: 0.5% 7%;
 	color: #fff;
 	text-shadow: -1px -1px 5px rgba(0,0,0,0.7);
 	box-shadow: -1px -1px 5px rgba(0,0,0,0.7);
 	border-radius: 5px;
 	position: absolute;
-	bottom: 2vw;
+	bottom: 2%;
 	right: 50%;
 	margin-right: -28%;
-	font-size: 3vw;
+	font-size: 16px;
 	text-align: center;
-	height: 5vw;
-	width: 25vw;
+	height: 7%;
+	width: 25%;
 }
 .layout a.btn{
 	position: absolute;
-	width: 5vw;
-	height: 5vw;
+	width: 9%;
+	height: 13%;
 	display: block;
 	background: transparent url(../img/play_up.png) no-repeat center center;
-	background-size: cover;
+	background-size: contain;
 }
 .layout a.btn:hover{
 	background: transparent url(../img/play_down.png) no-repeat center center;
-	background-size: cover;
+	background-size: contain;
 }
 .layout a#btn1{
-	top: 2vw;
-	left: 2vw;
+	top: 4%;
+	left: 4%;
 }
 .layout a#btn2{
-	top: 2vw;
-	right: 2vw;
+	top: 4%;
+	right: 4%;
 }
 .layout a#btn3{
-	bottom: 2vw;
-	left: 2vw;
+	bottom: 4%;
+	left: 4%;
 }
 .layout a#btn4{
-	bottom: 2vw;
-	right: 2vw;
-}
-@media(min-width: 768px){
-	.layout a.btn{
-		width: 9vw;
-		height: 9vw;
-	}
-	.layout a#btn1{
-		top: 4vw;
-		left: 4vw;
-	}
-	.layout a#btn2{
-		top: 4vw;
-		right: 4vw;
-	}
-	.layout a#btn3{
-		bottom: 4vw;
-		left: 4vw;
-	}
-	.layout a#btn4{
-		bottom: 4vw;
-		right: 4vw;
-	}
+	bottom: 4%;
+	right: 4%;
 }
 #app-video{
 	position: absolute;
 	top: 0;
-	left: 0.9vw;
-	bottom: 8.2vh;
+	left: 0.9%;
+	bottom: 11.3%;
 	right: 0;
 	margin: auto;
 	background: #000;
@@ -121,8 +99,28 @@ ion-nav-view, ion-view.pane{
 canvas#viewport{
 	position: absolute;
 	top: 0;
-	left: 0.9vw;
-	bottom: 8.2vh;
+	left: 0.9%;
+	bottom: 11.3%;
 	right: 0;
 	margin: auto;
+}
+@media(min-width: 768px){
+	.layout a#cam{
+		padding: 2% 7%;
+	}
+	.layout a#vid{
+		padding: 2% 7%;
+	}
+	.layout a#cam{
+		font-size: 31px;
+	}
+	.layout a#vid{
+		font-size: 31px;
+	}
+	#app-video{
+		bottom: 8.3%;
+	}
+	canvas#viewport{
+		bottom: 8.3%;
+	}
 }

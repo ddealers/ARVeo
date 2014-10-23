@@ -808,7 +808,7 @@ angular.module('ARVeo.controllers', [])
 	};
 	var initScan = function(){
 		Moodstocks.scan($scope);
-		TweenMax.to(bitmap, 0.5, {alpha: 0});
+		TweenMax.set(bitmap, {alpha: 0});
 		/*
 		Moodstocks.scan().then(function(response){
 			TweenMax.to(animation, 0.5, {alpha: 1});
@@ -855,7 +855,7 @@ angular.module('ARVeo.controllers', [])
 		analytics.trackEvent('Video', 'Play', 'id', name);
 		video.attr("src", "http://www.camaleon2punto1.com/veo/media/" + name);
 		//video.css({display:"block"});
-		video[0].currentTime = 0;
+		//video[0].currentTime = 0;
 		video[0].play();
 		//video[0].addEventListener('ended', onEnd, false);
 	};
@@ -863,15 +863,16 @@ angular.module('ARVeo.controllers', [])
 	createjs.Ticker.setFPS(60);
 	createjs.Touch.enable(stage);
 	createjs.Ticker.addEventListener('tick', stage);
-	
+	/*
 	show();
-
 	Moodstocks.init().then(function(response){
 		hide();
 		//initScan();
 		analytics.trackView('Video View');
 	}, function(response){
 		hide();
-		alert(response);
+		console.log(response);
+		//alert(response);
 	});
+    */
 })

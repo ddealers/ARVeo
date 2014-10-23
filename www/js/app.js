@@ -15,7 +15,6 @@ angular.module('starter', ['ionic','ARVeo.controllers','ARVeo.services','ARVeo.a
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
-
     analytics.startTrackerWithId('UA-55099400-1');
     $state.go('app');
   });
